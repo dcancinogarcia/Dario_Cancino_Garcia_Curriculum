@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Cancino Garcia - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .skill-bar {
+            transition: all 0.3s ease;
+        }
+        .skill-bar:hover {
+            transform: translateX(5px);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            border-left-color: #4F46E5;
+            box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.1);
+        }
+        .tech-badge {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .print-button {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+        }
+        @media print {
+            body {
+                background: white !important;
+            }
+            .cv-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+        .language-logo {
+            width: 16px;
+            height: 16px;
+        }
+        .section-icon {
+            width: 8px;
+            height: 24px;
+            margin-right: 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center py-8">
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="header-gradient text-white p-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h1 class="text-4xl font-bold mb-2">Dario Cancino Garcia</h1>
+                    <p class="text-xl text-blue-100">Bachelor of Science in Computer and Cybersecurity Engineering</p>
+                    <div class="mt-3 space-y-1">
+                        <p class="text-blue-200 flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>+1 (773) 335-9695
+                        </p>
+                        <p class="text-blue-200 flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>dcancinogarcia@hawk.illinoistech.edu
+                        </p>
+                        <p class="text-blue-200 flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>leonidascancino8@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
+                        <div class="text-2xl font-bold">2+</div>
+                        <div class="text-sm">Years of Programming Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Professional Profile -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-purple-600"></span>
+                        Professional Profile
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cybersecurity student with a solid background in science, especially advanced mathematics, and practical experience in various programming languages. 
+                        Committed individual with high intellectual capacity and a strong motivation for continuous learning of new technologies and methodologies. 
+                        Passionate about software research and development, with skills for teamwork and knowledge sharing, actively contributing to the success of collaborative projects. 
+                        Oriented toward solving complex problems and innovating in dynamic technological environments.
+                    </p>
+                </div>
+
+                <!-- Work Experience -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-blue-600"></span>
+                        Work Experience
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div class="project-card bg-gray-50 p-6 rounded-lg">
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-800">Cleaning Crew</h3>
+                                    <p class="text-purple-600 font-medium">FORESITE BUSINESS SOLUTIONS, INC.</p>
+                                    <h4 class="font-semibold text-gray-800">SOLDIER FIELD</h4>
+                                </div>
+                                <span class="text-sm text-gray-500">July 2025 - Present</span>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                                <li>Member of the cleaning crew</li>
+                                <li>Collaborate with clients by communicating with them where entrances for events are to maintain efficient flow of events</li>
+                                <li>Inform team members of updates during busy events in order to maintain clear communication for event management</li>
+                                <li>Field Care</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Projects -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-green-600"></span>
+                        Featured Projects
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="project-card bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Hospital Space Controller</h4>
+                            <p class="text-sm text-gray-600">Basic hospital management system that allows for managing room occupancy and patient and physician registration, as well as associated clinical data. 
+                                The system is designed for a hospital with three floors, each with 12 rooms, and each room with two beds, for a total of 36 beds/rooms. 
+                                Information is stored in parallel arrays and displayed on a console with an interactive menu.</p>
+                            <div class="flex flex-wrap gap-1 mt-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-code mr-1"></i>C++
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Content Management System (CMS)</h4>
+                            <p class="text-sm text-gray-600">Web system with a RESTful API for data management, an administration panel with dynamic functionalities (tables, forms, file management) and a JWT-based authentication system.</p>
+                            <div class="flex flex-wrap gap-1 mt-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
+                                    <i class="fab fa-php mr-1"></i>PHP
+                                </span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-database mr-1"></i>MySQL
+                                </span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
+                                    <i class="fab fa-html5 mr-1"></i>HTML
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Book Management System</h4>
+                            <p class="text-sm text-gray-600">Allows users to manage both printed and audio books through an interactive console menu. The system demonstrates object-oriented programming principles by using an interface and abstract class structure.</p>
+                            <div class="flex flex-wrap gap-1 mt-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
+                                    <i class="fab fa-java mr-1"></i>JAVA
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-800">Interactive Alarm Clock System</h4>
+                            <p class="text-sm text-gray-600">Interactive alarm clock system that requires users to complete a memory game to turn off the alarm. The system incorporates both visual (LEDs) and auditory (buzzer) elements to create an engaging wake-up experience.</p>
+                            <div class="flex flex-wrap gap-1 mt-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-microchip mr-1"></i>Arduino
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Documentary Research -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-red-600"></span>
+                        Documentary Research
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div class="project-card bg-gray-50 p-6 rounded-lg">
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-800">Mathematical Investigations</h3>
+                                </div>
+                                <span class="text-sm text-gray-500">January 2025 - June 2025</span>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                                <li>Application of Hamiltonian and Eulerian cycles in route optimization</li>
+                                <li>Applications of integral calculus in metrology</li>
+                                <li>Parametric Equations and Polar Curves</li>
+                                <li>Arc Length and Surfaces of Revolution</li>
+                            </ul>
+                            <div class="flex justify-between items-start mb-3 mt-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-800">Ergonomics Investigations</h3>
+                                </div>
+                                <span class="text-sm text-gray-500">June 2023</span>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                                <li>Problems caused by poor posture when sitting and leading a sedentary life</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Personal Skills -->
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center mt-8">
+                        <span class="section-icon bg-teal-600"></span>
+                        Personal Skills
+                    </h2>
+
+                    <div class="project-card bg-gray-50 p-6 rounded-lg">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Skills and Abilities</h3>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                            <li>Academic Maturity</li>
+                            <li>Versatility</li>
+                            <li>Technical Prowess</li>
+                            <li>Meticulous Document Process</li>
+                            <li>Deep Understanding of Mathematics</li>
+                            <li>Precision</li>
+                            <li>Passion</li>
+                            <li>Ability to perform well under high pressure</li>
+                            <li>Responsibility</li>
+                            <li>Honesty</li>
+                            <li>Resilience</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Technical Skills -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-orange-600"></span>
+                        Technical Skills
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <!-- Languages -->
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">Programming Languages</h3>
+                            <div class="space-y-2">
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fas fa-code mr-2"></i>C++</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fas fa-copyright mr-2"></i>C</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fab fa-python mr-2"></i>Python</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fab fa-java mr-2"></i>JAVA</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fab fa-html5 mr-2"></i>HTML</span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fab fa-php mr-2"></i>PHP</span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fas fa-database mr-2"></i>MySQL</span>
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center"><i class="fas fa-microchip mr-2"></i>Arduino</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools -->
+                        <div>
+                            <h3 class="font-semibold text-gray-700 mb-2">Tools and Technologies</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Visual Studio Code</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">DEV C++</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Microsoft 365</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">AutoCAD</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">XAMPP</span>
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-yellow-600"></span>
+                        Education
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-gray-800">High School</h3>
+                            <p class="text-purple-600">Preparatoria del Sur de Guanajuato</p>
+                            <p class="text-sm text-gray-600">Uriangato Guanajuato, Mexico</p>
+                            <p class="text-sm text-gray-600">August 2021 - June 2024</p>
+                            <p class="text-sm text-gray-600">High School Diploma</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-gray-800">Computer Systems Engineering</h3>
+                            <p class="text-purple-600">Universidad de Guanajuato</p>
+                            <p class="text-sm text-gray-600">Yuriria Guanajuato, Mexico</p>
+                            <p class="text-sm text-gray-600">August 2024 - June 2025</p>
+                        </div>
+
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-gray-800">Computer and Cybersecurity Engineering</h3>
+                            <p class="text-purple-600">Illinois Institute of Technology</p>
+                            <p class="text-sm text-gray-600">Chicago Illinois, U.S.</p>
+                            <p class="text-sm text-gray-600">August 2025 - Present</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-indigo-600"></span>
+                        Certifications
+                    </h2>
+                    
+                    <div class="project-card bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Certificates</h3>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                            <li>High School Diploma</li>
+                            <li>Sustainable Lifestyle</li>
+                            <li>Creativity and Entrepreneurial Spirit</li>
+                            <li>Development of Thinking Skills</li>
+                            <li>Art Appreciation</li>
+                            <li>Knowledge of the Tradition of the Day of the Dead</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-cyan-600"></span>
+                        Languages
+                    </h2>
+                    
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span class="flex items-center"><i class="fas fa-language mr-2"></i>Spanish</span>
+                            <span class="font-semibold text-teal-600">Native Language</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span class="flex items-center"><i class="fas fa-language mr-2"></i>English</span>
+                            <span class="font-semibold text-teal-600">B2 Upper Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-50 p-6 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-600 text-sm mb-4 md:mb-0">
+                    Last updated: December 2025 | Resume created with HTML, CSS 
+                </p>
+                <button onclick="window.print()" class="print-button text-white px-6 py-2 rounded-lg font-semibold no-print hover:opacity-90 transition-opacity">
+                    <i class="fas fa-print mr-2"></i>Print Resume
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Animation effects for skill bars
+    document.addEventListener('DOMContentLoaded', function() {
+        const skillBars = document.querySelectorAll('.skill-bar');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        skillBars.forEach(bar => {
+            bar.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(5px)';
+            });
+            bar.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.borderLeftColor = '#4F46E5';
+                this.style.boxShadow = '0 10px 25px -5px rgba(79, 70, 229, 0.1)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.borderLeftColor = 'transparent';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // Simulate progressive loading of skill bars
+        setTimeout(() => {
+            document.querySelectorAll('.skill-bar .bg-purple-600').forEach(bar => {
+                bar.style.transition = 'width 1s ease-in-out';
+            });
+        }, 500);
+    });
+    </script>
+</body>
+</html>
