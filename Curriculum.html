@@ -46,6 +46,43 @@
         .print-button {
             background: linear-gradient(135deg, #10B981 0%, #059669 100%);
         }
+        /* Estilos para enlaces */
+        .project-link {
+            color: #4F46E5;
+            text-decoration: none;
+            border-bottom: 1px dashed #A5B4FC;
+            transition: all 0.2s ease;
+            display: inline-block;
+            margin-top: 4px;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        .project-link:hover {
+            color: #7C3AED;
+            border-bottom: 1px solid #7C3AED;
+            transform: translateY(-1px);
+        }
+        /* Logo personalizado para Mermaid */
+        .mermaid-logo {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+            border-radius: 50%;
+            position: relative;
+            margin-right: 8px;
+        }
+        .mermaid-logo:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: white;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
         @media print {
             body {
                 background: white !important;
@@ -56,6 +93,10 @@
             }
             .no-print {
                 display: none !important;
+            }
+            .project-link {
+                color: #4F46E5 !important;
+                border-bottom: 1px solid #4F46E5 !important;
             }
         }
         .language-logo {
@@ -92,7 +133,7 @@
                 </div>
                 <div class="flex space-x-4">
                     <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
-                        <div class="text-2xl font-bold">2+</div>
+                        <div class="text-2xl font-bold">3+</div>
                         <div class="text-sm">Years of Programming Experience</div>
                     </div>
                 </div>
@@ -142,6 +183,25 @@
                             </ul>
                         </div>
                     </div>
+
+                    <div class="space-y-6">
+                        <div class="project-card bg-gray-50 p-6 rounded-lg">
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-800">Cultural Specialist</h3>
+                                    <p class="text-purple-600 font-medium">Alianza - The Latinx Student Alliance</p>
+                                    <h4 class="font-semibold text-gray-800">Alianza</h4>
+                                </div>
+                                <span class="text-sm text-gray-500">November 2025 - Present</span>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                                <li>Shall maintain knowledge of the numerous Latine Cultures in and out of the United States</li>
+                                <li>Shall remain constantly updated on the present state of the Latine communities in and out of the United States </li>
+                                <li>Shall work closely with the Programming Director and Public Relations Director to ensure our endeavors are incorporating multiple aspects of Latine Cultures </li>
+                                <li> Shall review the calendar of events before and after each semester to rate our success in representing the Latine Cultures </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Featured Projects -->
@@ -157,6 +217,9 @@
                             <p class="text-sm text-gray-600">Basic hospital management system that allows for managing room occupancy and patient and physician registration, as well as associated clinical data. 
                                 The system is designed for a hospital with three floors, each with 12 rooms, and each room with two beds, for a total of 36 beds/rooms. 
                                 Information is stored in parallel arrays and displayed on a console with an interactive menu.</p>
+                            <a href="https://github.com/dcancinogarcia/Hospital-Space-Controller.git" target="_blank" class="project-link">
+                                <i class="fab fa-github mr-1"></i>https://github.com/dcancinogarcia/Hospital-Space-Controller.git
+                            </a>
                             <div class="flex flex-wrap gap-1 mt-2">
                                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
                                     <i class="fas fa-code mr-1"></i>C++
@@ -183,6 +246,9 @@
                         <div class="project-card bg-gray-50 p-4 rounded-lg">
                             <h4 class="font-semibold text-gray-800">Book Management System</h4>
                             <p class="text-sm text-gray-600">Allows users to manage both printed and audio books through an interactive console menu. The system demonstrates object-oriented programming principles by using an interface and abstract class structure.</p>
+                            <a href="https://github.com/dcancinogarcia/Book-Application-System.git" target="_blank" class="project-link">
+                                <i class="fab fa-github mr-1"></i>https://github.com/dcancinogarcia/Book-Application-System.git
+                            </a>
                             <div class="flex flex-wrap gap-1 mt-2">
                                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
                                     <i class="fab fa-java mr-1"></i>JAVA
@@ -193,6 +259,9 @@
                         <div class="project-card bg-gray-50 p-4 rounded-lg">
                             <h4 class="font-semibold text-gray-800">Interactive Alarm Clock System</h4>
                             <p class="text-sm text-gray-600">Interactive alarm clock system that requires users to complete a memory game to turn off the alarm. The system incorporates both visual (LEDs) and auditory (buzzer) elements to create an engaging wake-up experience.</p>
+                            <a href="https://github.com/dcancinogarcia/Interactive-Alarm-Clock-System.git" target="_blank" class="project-link">
+                                <i class="fab fa-github mr-1"></i>https://github.com/dcancinogarcia/Interactive-Alarm-Clock-System.git
+                            </a>
                             <div class="flex flex-wrap gap-1 mt-2">
                                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded flex items-center">
                                     <i class="fas fa-microchip mr-1"></i>Arduino
@@ -232,35 +301,17 @@
                             <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
                                 <li>Problems caused by poor posture when sitting and leading a sedentary life</li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <!-- Personal Skills -->
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center mt-8">
-                        <span class="section-icon bg-teal-600"></span>
-                        Personal Skills
-                    </h2>
-
-                    <div class="project-card bg-gray-50 p-6 rounded-lg">
-                        <div class="flex justify-between items-start mb-3">
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-800">Skills and Abilities</h3>
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-800">Co-author</h3>
+                                    <h4 class="text-xl font-semibold text-gray-600">Space Cybersecurity</h4class></h4>
+                                </div>
+                                <span class="text-sm text-gray-500">November 2025</span>
                             </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                                <li>Defend satellites against hacking: the interdisciplinarity among computer science, cybersecurity, and aerospace</li>
+                            </ul>
                         </div>
-                        <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
-                            <li>Academic Maturity</li>
-                            <li>Versatility</li>
-                            <li>Technical Prowess</li>
-                            <li>Meticulous Document Process</li>
-                            <li>Deep Understanding of Mathematics</li>
-                            <li>Precision</li>
-                            <li>Passion</li>
-                            <li>Ability to perform well under high pressure</li>
-                            <li>Responsibility</li>
-                            <li>Honesty</li>
-                            <li>Resilience</li>
-                            <li>Leadership</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -308,6 +359,18 @@
                                 </div>
                                 <div class="skill-bar">
                                     <div class="flex justify-between text-sm text-gray-600 mb-1">
+                                        <span class="flex items-center">
+                                            <span class="mermaid-logo"></span>
+                                            Mermaid
+                                        </span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="flex justify-between text-sm text-gray-600 mb-1">
                                         <span class="flex items-center"><i class="fab fa-java mr-2"></i>JAVA</span>
                                         <span>70%</span>
                                     </div>
@@ -318,10 +381,10 @@
                                 <div class="skill-bar">
                                     <div class="flex justify-between text-sm text-gray-600 mb-1">
                                         <span class="flex items-center"><i class="fab fa-html5 mr-2"></i>HTML</span>
-                                        <span>30%</span>
+                                        <span>40%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-2">
-                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 30%"></div>
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 40%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-bar">
@@ -336,10 +399,10 @@
                                 <div class="skill-bar">
                                     <div class="flex justify-between text-sm text-gray-600 mb-1">
                                         <span class="flex items-center"><i class="fas fa-database mr-2"></i>MySQL</span>
-                                        <span>20%</span>
+                                        <span>30%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-2">
-                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 20%"></div>
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 30%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-bar">
@@ -367,6 +430,31 @@
                                 <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">MySQL</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Personal Skills -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="section-icon bg-teal-600"></span>
+                        Personal Skills
+                    </h2>
+
+                    <div class="project-card bg-gray-50 p-4 rounded-lg">
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 ml-4">
+                            <li>Academic Maturity</li>
+                            <li>Versatility</li>
+                            <li>Technical Prowess</li>
+                            <li>Meticulous Document Process</li>
+                            <li>Deep Understanding of Mathematics</li>
+                            <li>Precision</li>
+                            <li>Passion</li>
+                            <li>Ability to perform well under high pressure</li>
+                            <li>Responsibility</li>
+                            <li>Honesty</li>
+                            <li>Resilience</li>
+                            <li>Leadership</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -465,6 +553,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const skillBars = document.querySelectorAll('.skill-bar');
         const projectCards = document.querySelectorAll('.project-card');
+        const projectLinks = document.querySelectorAll('.project-link');
 
         skillBars.forEach(bar => {
             bar.addEventListener('mouseenter', function() {
@@ -488,6 +577,18 @@
             });
         });
 
+        // Add hover effect to project links
+        projectLinks.forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-1px)';
+                this.style.boxShadow = '0 2px 4px rgba(79, 70, 229, 0.2)';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
         // Simulate progressive loading of skill bars
         setTimeout(() => {
             document.querySelectorAll('.skill-bar .bg-purple-600').forEach(bar => {
@@ -497,5 +598,4 @@
     });
     </script>
 </body>
-
 </html>
